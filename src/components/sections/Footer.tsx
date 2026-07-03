@@ -69,7 +69,17 @@ export function Footer() {
 
       <div className="container-doucier mt-12 pt-6 border-t border-gold-400/15 flex flex-col md:flex-row justify-between gap-3 text-xs text-cream/50">
         <span>© {new Date().getFullYear()} Doucier — Doces Gourmet.</span>
-        <span>Sabor artesanal, textura cremosa.</span>
+        <span>
+          feito por{" "}
+          <a
+            href="https://db.app.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gold-300 hover:text-gold-200 transition-colors"
+          >
+            db.app
+          </a>
+        </span>
       </div>
     </footer>
   );

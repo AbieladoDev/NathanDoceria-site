@@ -1,6 +1,6 @@
 export const WHATS_NUMBER = "5551995040101";
 export const WHATS_DISPLAY = "(51) 99504-0101";
-export const INSTAGRAM = "doucier";
+export const INSTAGRAM = "douciergourmet";
 
 export function buildWhatsUrl(message: string) {
   return `https://wa.me/${WHATS_NUMBER}?text=${encodeURIComponent(message)}`;

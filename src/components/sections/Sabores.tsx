@@ -22,7 +22,7 @@ export function Sabores() {
           </p>
         </div>
 
-        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {FLAVORS.map((f, i) => (
             <FlavorCard key={f.slug} flavor={f} index={i} />
           ))}
