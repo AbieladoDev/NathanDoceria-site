@@ -3,19 +3,11 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { MessageCircle, ArrowDown, Heart } from "lucide-react";
 import { buildWhatsUrl, defaultWhatsMessage } from "@/lib/whatsapp";
+import { FLAVORS } from "@/lib/flavors";
 
-const VITRINE = [
-  "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?w=800&q=80",
-  "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=80",
-  "https://images.unsplash.com/photo-1488477304112-4944851de03d?w=800&q=80",
-  "https://images.unsplash.com/photo-1551529834-525807d6b4f3?w=800&q=80",
-  "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&q=80",
-  "https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=800&q=80",
-  "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=800&q=80",
-  "https://images.unsplash.com/photo-1464195244916-405fa0a82545?w=800&q=80",
-];
+const VITRINE = FLAVORS.map((f) => f.img);
 
-const LABELS = ["Chocolate com Oreo", "Maracujá", "Morango", "Limão", "Cremoso", "Artesanal", "120ml", "Feito à mão"];
+const LABELS = FLAVORS.map((f) => f.nome);
 
 export function Hero() {
   return (
@@ -66,7 +58,8 @@ export function Hero() {
         </motion.div>
       </div>
 
-      {/* Vitrine — marquee infinito */}
+      {/* Vitrine — marquee infinito (desativado por enquanto) */}
+      {false && (
       <div className="relative mt-16">
         <div className="relative overflow-hidden">
           {/* fade edges */}
@@ -94,6 +87,7 @@ export function Hero() {
           </div>
         </div>
       </div>
+      )}
 
     </section>
   );

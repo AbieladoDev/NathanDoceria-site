@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#2b1b12"/>
+  <!-- pote -->
+  <path d="M20 28 h24 l-2.5 22 a4 4 0 0 1 -4 3.5 h-11 a4 4 0 0 1 -4 -3.5 z" fill="#f6efe4"/>
+  <!-- mousse / recheio -->
+  <path d="M20 28 h24 l-1 9 h-22 z" fill="#e8b04a"/>
+  <!-- rim -->
+  <rect x="17" y="24" width="30" height="6" rx="3" fill="#e8b04a"/>
+  <!-- topping swirl -->
+  <circle cx="32" cy="18" r="6" fill="#f6efe4"/>
+  <circle cx="32" cy="14" r="2.4" fill="#c9403f"/>
+</svg>
